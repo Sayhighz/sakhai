@@ -65,7 +65,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/img/banner\ bg.jpg);
     background-position: center;
 }
 
@@ -77,17 +76,12 @@ html {
     height: 50rem;
 }
 
-.main-con h1 {
-    font-size: 10rem;
-    margin-bottom: 4rem;
-}
-
 .btn a {
     display: block;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    width: 16rem;
+    width: 25rem;
     color: #f0f2f5;
     background-color: #1F232D;
     border-radius: 5%;
@@ -97,58 +91,6 @@ html {
 
 .btn a:hover {
     color: #a8a9ac;
-}
-
-.h2_step {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 1px;
-}
-
-.process {
-    display: flex;
-    justify-content: center;
-}
-
-.process-con {
-    max-width: 900px;
-    width: 100%;
-    height: 15rem;
-    font-size: 1rem;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-    align-items: center;
-}
-
-.promo {
-    display: flex;
-    justify-content: center;
-}
-
-.promo-con {
-    max-width: 900px;
-    width: 100%;
-    height: 15rem;
-    font-size: 1rem;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    align-items: center;
-}
-
-.promotion {
-    background-color: white;
-    padding: 2rem;
-    margin: 1rem;
-    border-radius: 10%;
-    box-shadow: #bbbbbb 5px 5px 5px;
-}
-
-.promotion:hover {
-    margin-top: -1px;
 }
 
 footer {

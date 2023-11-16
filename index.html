@@ -13,7 +13,7 @@
                     <h1>ซักให้</h1>
                 </div>
                 <ul>
-                    <li><a href="#">ค่าบริการ</a></li>
+                    <li><a href="#promo">ค่าบริการ</a></li>
                     <li><a href="#">เข้าสู่ระบบ</a></li>
                 </ul>
             </div>
@@ -22,36 +22,36 @@
             <div class="main-con">
                 <h1>
                     <span>เรา</span>
-                    <span>ซัก</span>
+                    <span id="logo">ซัก</span>
                     <span>ให้</span>
                 </h1>
                 <span>เพิ่มความสะดวกในชีวิตประจำวัน ด้วยบริการ</span>
-                <span>รับ</span>
+                <span>รับ-ส่ง-ซัก</span>
                 <span>ที่ทันสมัยและเหมาะสำหรับคุณ!</span>
                 <div class="btn">
-                    <a href="#">ซักผ้าตอนนี้</a>
+                    <a href="/form.html">ซักผ้าตอนนี้</a>
                 </div>
             </div>
         </div>
-        <h2 class="h2_step">อัตราค่าบริการ</h2>
+        <h2 class="h2_step" id="promo">อัตราค่าบริการ</h2>
         <div class="promo">
             <div class="promo-con">
                 <div class="promotion">
-                    <img src="/img/promo/48hrs.png" width="20%" alt="">
+                    <img src="/img/promo/48hrs.png" width="20%" alt>
                     <h3>จัดส่งภายใน 48 ชั่วโมง</h3>
                     <span class="price">19</span>
                     <span class="baht">฿</span>
                     <span class="kg">/กก.</span>
                 </div>
                 <div class="promotion">
-                    <img src="/img/promo/24hrs.png" width="20%" alt="">
+                    <img src="/img/promo/24hrs.png" width="20%" alt>
                     <h3>จัดส่งภายใน 24 ชั่วโมง</h3>
                     <span class="price">39</span>
                     <span class="baht">฿</span>
                     <span class="kg">/กก.</span>
                 </div>
                 <div class="promotion">
-                    <img src="/img/promo/6hrs.png" width="20%" alt="">
+                    <img src="/img/promo/6hrs.png" width="20%" alt>
                     <h3>จัดส่งภายใน 6 ชั่วโมง</h3>
                     <span class="price">59</span>
                     <span class="baht">฿</span>
@@ -63,19 +63,19 @@
         <div class="process">
             <div class="process-con">
                 <div class="step">
-                    <img src="/img/step/1.png" width="20%" alt="">
+                    <img src="/img/step/1.png" width="20%" alt>
                     <h3>กรอกข้อมูล</h3>
                 </div>
                 <div class="step">
-                    <img src="/img/step/2.png" width="20%" alt="">
+                    <img src="/img/step/2.png" width="20%" alt>
                     <h3>รับผ้าจากคุณ</h3>
                 </div>
                 <div class="step">
-                    <img src="/img/step/3.png" width="20%" alt="">
+                    <img src="/img/step/3.png" width="20%" alt>
                     <h3>ซัก/อบ/รีด ผ้าโดยร้าน Partner</h3>
                 </div>
                 <div class="step">
-                    <img src="/img/step/4.png" width="20%" alt="">
+                    <img src="/img/step/4.png" width="20%" alt>
                     <h3>ส่งคืนผ้า</h3>
                 </div>
             </div>
@@ -84,15 +84,15 @@
             <p>By Group 2 Sec 001</p>
         </footer>
         <script>
-        window.onscroll = function() {scrollFunction()};
+            let texts = ['"ซัก"','"อบ"','"รีด"'];
+            let index = 0;
 
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementsByClassName("navbar").style.top = "0";
-        } else {
-            document.getElementsByClassName("navbar").style.top = "-50px";
-        }
-}
+            let intervalId = setInterval(function() {
+                document.getElementById("logo").textContent = texts[index];
+                index = (index + 1) % texts.length;
+            }, 2000);
+
+            setTimeout(intervalId, 0)
     </script>
     </body>
 </html>

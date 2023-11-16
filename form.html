@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ซักให้</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/form.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="main-con">
+                <form action="/order.html">
+                    <div class="section-heading mb-4">
+                        <h3>1. เลือกการบริการ</h3>
+                    </div>
+                    <div class="cardall">
+                        <div class="card-body">
+                            <div class="buttonhead">
+                                <div class="btnmain w-100">
+                                    <a href="#userdata" class="btn btn-primary"
+                                        style="font-size: 2rem;">กรอกข้อมูลส่วนตัว</a>
+                                </div>
+                            </div>
+                            <div class="radiocard1 w-100">
+                                <input class="radio1 checktest" type="radio"
+                                    name="pricingRadio1" id="pricingRadio1"
+                                    required>
+                                <label for="pricingRadio1"
+                                    class="label1 testcheck w-100">
+                                    <div class="row">
+                                        <div class="textright">
+                                            <div>
+                                                <!-- <span class="blue1 baht right3">
+                                                    99</span>
+                                                <span class="blue1 baht2 right3">฿</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="h3one right3">
+                                            <div class="h3 mb-0 right3">ส่งคืน48
+                                                ชั่วโมง</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="radiocard1 w-100">
+                                <input class="radio1 checktest" type="radio"
+                                    name="pricingRadio1" id="pricingRadio2">
+                                <label for="pricingRadio2"
+                                    class="label2 testcheck w-100">
+                                    <div class="row">
+                                        <div class="textright">
+                                            <div>
+                                                <!-- <span class="blue1 baht right3">179</span>
+                                                <span class="blue1 baht2 right3">฿</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="h3one right3">
+                                            <div class="h3 mb-0 right3">ส่งคืน24
+                                                ชั่วโมง</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="radiocard1 w-100">
+                                <input class="radio1 checktest" type="radio"
+                                    name="pricingRadio1" id="pricingRadio3">
+                                <label for="pricingRadio3"
+                                    class="label3 testcheck w-100">
+                                    <div class="row">
+                                        <div class="textright">
+                                            <div>
+                                                <!-- <span class="blue1 baht right3">389</span>
+                                                <span class="blue1 baht2 right3">฿</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="h3one right3">
+                                            <div class="h3 mb-0">ส่งคืน6 ชั่วโมง</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-heading mb-4">
+                        <h3>2. ระบุรายละเอียด</h3>
+                    </div>
+                    <div class="cardall">
+                        <div class="card-body position-relative">
+                            <div>
+                                <div>
+                                    <p class="pe1">ใส่น้ำหนักเสื้อผ้าของคุณโดยประมาณ</p>
+                                    <p class="font-size1">"นี่เป็นการประเมินน้ำหนักโดยคร่าวๆ เท่านั้น เสื้อผ้าของคุณจะถูกชั่งน้ำหนักอีกครั้งที่ร้านของเรา"</p>
+                                    <input type="range" id="rangeInput" min="1"
+                                        max="20" value="1">
+                                    <p>กำหนดน้ำหนักผ้าของคุณให้เรา : <span
+                                            id="rangeValue">1 /กิโลกรัม</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-heading mb-4">
+                        <h3 id="userdata">3.ข้อมูลติดต่อของท่าน</h3>
+                    </div>
+                    <div class="cardall">
+                        <div class="card-body position-relative">
+                            <div>
+                                <div>
+                                    <div class="cname">
+                                        <label class="nearlabel" for>ชื่อ-สกุล</label>
+                                        <input class="form-control" type="text"
+                                            required>
+                                    </div>
+                                    <div class="cmail">
+                                        <label class="nearlabel" for>อีเมลของคุณ</label>
+                                        <input class="form-control" type="email"
+                                            required>
+                                    </div>
+                                    <div class="ctel">
+                                        <label class="nearlabel" for>เบอร์โทรศัพท์(*จำเป็น*)</label>
+                                        <input class="form-control"
+                                            maxlength="15" type="tel"
+                                            placeholder="เช่น 0899833812"
+                                            required>
+                                    </div>
+                                    <div class="clive">
+                                        <label class="nearlabel" for>ชื่อของที่พัก
+                                            หรือ อพาร์ทเม้นของคุณ</label>
+                                        <input class="form-control" type="text"
+                                            required>
+                                    </div>
+                                    <div class="cnumberroom">
+                                        <label class="nearlabel" for>หมายเลขห้อง</label>
+                                        <input class="form-control"
+                                            maxlength="15" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-heading mb-4">
+                        <h3>4.คุณต้องการชำระค่าบริการอย่างไร?</h3>
+                    </div>
+                    <div class="cardall">
+                        <div class="card-body position-relative">
+                            <div id="payment">
+                                <p class="mb-5 font-size1 line">ท่านไม่ต้องชำระค่าบริการจนกว่าผ้าของท่านจะได้รับการชั่งน้ำหนักและคำนวนราคาค่าบริการทั้งหมด
+                                    จากนั้นคุณจะได้รับใบแจ้งราคาสินค้าผ่านทางอีเมล</p>
+                            </div>
+                            <div class="radiolast w-100">
+                                <input type="radio" class="radio2 checktest"
+                                    name="radiolast1" id="radiolast1" required>
+                                <label for="radiolast1"
+                                    class="label4 testcheck w-100">
+                                    <div class="row">
+                                        <div class="h3one right3">
+                                            <div class="h3 mb-0 right3">บัตรเครดิต</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radiolast w-100">
+                                <input type="radio" class="radio2 checktest"
+                                    name="radiolast1" id="radiolast2">
+                                <label for="radiolast2"
+                                    class="label4 testcheck w-100">
+                                    <div class="row">
+                                        <div class="h3one right3">
+                                            <div class="h3 mb-0 right3">โอนจ่าย
+                                                / พร้อมเพย์</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radiolast w-100">
+                                <input type="radio" class="radio2 checktest"
+                                    name="radiolast1" id="radiolast3">
+                                <label for="radiolast3"
+                                    class="label4 testcheck w-100">
+                                    <div class="row">
+                                        <div class="h3one right3">
+                                            <div class="h3 mb-0 right3">เก็บเงินปลายทาง</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardall1">
+                        <div class="card-body position-relative">
+                            <input type="submit"
+                                class="btn btn-primary btn-lg btn-block ladda-button request-ladda-button mb-3"
+                                value="สั่งจองบริการรับ-ส่งผ้า">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script>
+                // Update the displayed value when the range input changes
+                document.getElementById('rangeInput').addEventListener('input', function () {
+                    // Get the value from the range input
+                    let value = this.value;
+
+                    // You can add custom text to the value
+                    let customText = " /กิโลกรัม";
+
+                    // Update the displayed value with custom text
+                    document.getElementById('rangeValue').textContent = value + customText;
+                });
+
+            </script>
+        </body>
+    </html>

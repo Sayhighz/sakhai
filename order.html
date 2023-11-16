@@ -13,14 +13,14 @@
                     <h1>ซักให้</h1>
                 </div>
                 <ul>
-                    <li><a href="#promo">ค่าบริการ</a></li>
+                    <li><a href="index.html">ค่าบริการ</a></li>
                     <li><a href="#">เข้าสู่ระบบ</a></li>
                 </ul>
             </div>
         </div>
         <div class="main">
             <div class="main-con">
-                <img src="img/loading.gif" alt width="500rem">
+                <img src="img/delivery-process/1.gif" alt width="60%" id="changingImage">
                 <h1 id="status">กำลังดำเนินการ</h1>
                 <div class="btn">
                     <a href="index.html">กดยืนยันเมื่อได้รับผ้า</a>
@@ -30,6 +30,24 @@
         <footer>
             <p>By Group 2 Sec 001</p>
         </footer>
-        <script src="script/loading.js"></script>
+        <script>
+            let texts = ["กำลังดำเนินการ", "กำลังไปรับผ้า", "กำลังซักผ้า", "กำลังนำผ้าไปส่งให้คุณ", "จัดส่งผ้าเสร็จสิ้น"];
+            let images = ["/img/delivery-process/1.gif","/img/delivery-process/2.gif","/img/delivery-process/3.gif","/img/delivery-process/4.gif","/img/delivery-process/5.gif"];
+
+            let index = 0;
+            let currentIndex = 0;
+
+            let intervalId = setInterval(function () {
+                document.getElementById("status").textContent = texts[index];
+                document.getElementById("changingImage").src = images[currentIndex];
+
+                index = (index + 1) % texts.length;
+                currentIndex = (currentIndex + 1) % images.length;
+            }, 3000);
+
+            setTimeout(function () {
+                clearInterval(intervalId);
+            }, 15000);
+        </script>
     </body>
 </html>

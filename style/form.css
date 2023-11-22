@@ -24,6 +24,8 @@ body {
     padding-top: 2rem !important;
 }
 
+
+
 .main-con {
     width: 100%;
     padding-right: 15px;
@@ -337,4 +339,50 @@ input[type="range"]:focus::-webkit-slider-thumb {
     color: #fff;
     background-color: #1F232D;
     border-color: #1F232D;
+}
+
+/* เลือกเนื้อผ้า */
+
+.card-body1{ 
+    padding: 0.9rem 0 0.9rem 5rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.radiocard-1{
+    position: relative;
+}
+
+.radiocard-1 input {
+    position: absolute;
+    top: 3.25rem;
+    right: 8rem;
+    z-index: 1;
+    width: 5rem;
+    height: 1.5rem;
+    accent-color: #1F232D;
+}
+
+.labelradio{
+    border: 2px solid #d7d7da;
+    padding: 2rem !important;
+    border-radius: 50px !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.w-70{
+    width: 70% !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card-body1 {
+        flex-direction: column;
+    }
+
+    .labelradio {
+        margin-bottom: 10px;
+    }
 }

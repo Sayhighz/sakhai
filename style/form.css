@@ -248,6 +248,11 @@ label {
 
 p {
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-body p{
+    margin-left: 20px;
 }
 
 .pe1 {
@@ -344,7 +349,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 /* เลือกเนื้อผ้า */
 
 .card-body1{ 
-    padding: 0.9rem 0 0.9rem 5rem;
+    padding: 2rem 5rem 2rem 8rem;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -357,7 +362,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 .radiocard-1 input {
     position: absolute;
     top: 3.25rem;
-    right: 8rem;
+    right: 10rem;
     z-index: 1;
     width: 5rem;
     height: 1.5rem;
@@ -376,13 +381,27 @@ input[type="range"]:focus::-webkit-slider-thumb {
     width: 70% !important;
 }
 
+.boxcard{
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
     .card-body1 {
         flex-direction: column;
     }
 
+    .radiocard-1 input {
+        position: absolute;
+        top: calc(100% - 6.5rem);
+        z-index: 1;
+        width: 5rem;
+        height: 1.5rem;
+        accent-color: #1F232D;
+    }
+
     .labelradio {
-        margin-bottom: 10px;
+        margin-bottom: 7px;
     }
 }

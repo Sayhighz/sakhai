@@ -122,6 +122,11 @@ a.forgot {
     border-bottom: 2px solid #eee;
 }
 
+a.return {
+    padding-top: 20px;
+    border-bottom: 2px solid #eee;
+}
+
 button {
     border-radius: 20px;
     border: 1px solid var(--grad-clr1);
@@ -159,7 +164,7 @@ button {
     cursor: pointer;
     position: absolute;
     left: 50%;
-    top: 304px;
+    top: 301px;
     transform: translateX(-50%);
     width: 143.67px;
     height: 40px;

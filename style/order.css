@@ -29,25 +29,31 @@ html {
     width: 100%;
     display: flex;
     color: #1F232D;
-    ;
     justify-content: center;
 }
 
 .logo {
     display: flex;
     justify-content: center;
-    width: 10rem;
+}
+
+.login-btn {
+    background-color: #b6b6b6;
+    border-radius: 30px;
+    box-shadow: #7a7a7a 5px 5px 5px;
+    padding: 0.625rem 2.5rem;
 }
 
 .navbar ul {
     display: flex;
     width: 100%;
     justify-content: right;
+    align-items: center;
     list-style: none;
 }
 
 .navbar ul li {
-    margin: 1rem;
+    margin: 0.7rem;
 }
 
 .navbar ul li a {
@@ -84,14 +90,15 @@ html {
 
 .btn a {
     display: block;
+    font-size: 1.5rem;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     width: 25rem;
     color: #f0f2f5;
     background-color: #1F232D;
-    border-radius: 5%;
-    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    padding: 2rem 2rem;
     text-decoration: none;
 }
 
@@ -100,8 +107,35 @@ html {
 }
 
 footer {
-    background-color: #1F232D;
+    background-color: #49556D;
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    align-items: center;
     padding: 1rem;
-    text-align: center;
+    font-size: 1.2rem;
     color: white;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+footer ul a:hover{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+
+.on-footer{
+    text-align: left;
+    padding: 70px 0;
+}
+
+.about div{
+    padding: 0.5rem 0;
 }

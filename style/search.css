@@ -9,6 +9,7 @@
 body {
     background-color: #f0f2f5;
     font-family: 'Anuphan', sans-serif;
+    
 }
 
 html {
@@ -69,7 +70,7 @@ html {
 /*  */
 
 .container{
-    padding-top: 2rem !important
+    padding-top: 5rem !important
 }
 
 .main-con {
@@ -80,4 +81,155 @@ html {
     margin-left: auto;
     min-height: 100vh !important;
     max-width: 900px;
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 76px;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+}
+
+.input-box i, .input-box .button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box i{
+    left: 20px;
+    font-size: 30px;
+}
+
+.input-box .button{
+    right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: #2e2e2e;
+    cursor: pointer;
+}
+
+.input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 20px;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+}
+
+.checked {
+    color: orange;
+  }
+
+.shop-con{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    height: 500px;
+    background-color: rgb(179, 173, 185);
+    border-radius: 20px;
+}
+
+.shop-con .pic{
+    width: 40%;
+    height: 200px;
+    /* background-color: red; */
+    /* border-radius: 20px; */
+}
+
+.shop-con .pic img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shop-con .list{
+    margin-left: 20px;
+    width: 55%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.shop-con .list p{
+    padding: 20px 0 0 20px;
+}
+
+.shop-con .list .p2{
+    padding: 5px 0 0 20px;
+}
+.shop-con .fes{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.selected{
+    position: absolute;
+    right: 80px;
+    bottom: 20px;
+}
+
+.selected button{
+    background-color: #1F232D;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.selected button:hover{
+    background-color: #525e6b;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .main-con h1 {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        display: none;
+  }
+
+    .navbar{
+        font-size: 1.2rem;
+    }
+
+    .navbar ul{
+        justify-content: center;
+    }
+    /* search */
+    .input-box{
+        height: 66px;
+        margin: 0 8px;
+    }
+    .input-box i{
+        left: 12px;
+    }
+    .input-box input{
+        padding: 0 112px 0 50px;
+    }
+.input-box .button{
+    right: 12px;
+    padding: 8px 18px;
+}
 }

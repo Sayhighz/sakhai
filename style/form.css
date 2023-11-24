@@ -401,6 +401,23 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 
+/* เลือกชนิดผ้า */
+
+.radiocard-2{
+    position: relative;
+    margin-right: 5px;
+}
+
+.radiocard-2 input {
+    position: absolute;
+    top: 3.8rem;
+    right: 0.5rem;
+    z-index: 1;
+    width: 5rem;
+    height: 1.5rem;
+    accent-color: #1F232D;
+}
+
 @media only screen and (max-width: 600px) {
     .card-body1 , .card-body12 {
         flex-direction: column;
@@ -412,7 +429,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
     .radiocard-1 input {
         position: absolute;
-        top: calc(100% - 6.5rem);
+        top: calc(100% - 8rem);
         /* right: calc(100% - 14rem); */
         z-index: 1;
         width: 5rem;
@@ -420,25 +437,18 @@ input[type="range"]:focus::-webkit-slider-thumb {
         accent-color: #1F232D;
     }
 
+    .radiocard-2 input {
+        position: absolute;
+        top: calc(100% - 8.5rem);
+        /* right: calc(100% - 14rem); */
+        z-index: 1;
+        width: 5rem;
+        height: 1.5rem;
+        accent-color: #1F232D;
+    }
+    
+
     .labelradio {
         margin-bottom: 7px;
     }
-}
-
-
-/* เลือกชนิดผ้า */
-
-.radiocard-2{
-    position: relative;
-    margin-right: 5px;
-}
-
-.radiocard-2 input {
-    position: absolute;
-    top: 3.25rem;
-    right: 0.5rem;
-    z-index: 1;
-    width: 5rem;
-    height: 1.5rem;
-    accent-color: #1F232D;
 }

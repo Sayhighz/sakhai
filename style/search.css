@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@600&display=swap');
 
-body {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background-color: #f0f2f5;
     font-family: 'Anuphan', sans-serif;
 }
@@ -60,4 +64,20 @@ html {
 
 .navbar a:hover {
     color: #818181;
+}
+
+/*  */
+
+.container{
+    padding-top: 2rem !important
+}
+
+.main-con {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100vh !important;
+    max-width: 900px;
 }

@@ -100,7 +100,7 @@ label {
     left: 50%;
     top: 100%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 0%;
     height: 2px;
     background: var(--linear-grad);
     transition: 0.3s;
@@ -145,7 +145,7 @@ button {
 }
 
 .form-container button:hover {
-    background-color: #fff;
+    background: #fff;
     color: var(--grad-clr1);
 }
 
@@ -198,12 +198,12 @@ button {
 
 .overlay-left {
     right: 60%;
-    transform: translateX(-12%)
+    transform: translateX(-12%);
 }
 
 .overlay-right {
     right: 0;
-    transform: translateX(0%)
+    transform: translateX(0%);
 }
 
 .overlay-panel h1 {
@@ -258,7 +258,7 @@ p {
         z-index: 1;
     }
     50.1%, 100% {
-        opacity: 0;
+        opacity: 1;
         z-index: 5;
     }
 }

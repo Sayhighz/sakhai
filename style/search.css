@@ -138,9 +138,24 @@ html {
     margin-top: 40px;
     width: 100%;
     display: flex;
+     flex-wrap: wrap; 
     height: 500px;
     background-color: rgb(179, 173, 185);
     border-radius: 20px;
+}
+
+.shop-1{
+    width: 100%;
+    display: flex;
+    height: 50%;
+    margin-top: 5px;
+}
+
+.shop-2{
+    width: 100%;
+    height: 50%;
+    margin-top: 5px;
+    display: flex;
 }
 
 .shop-con .pic{
@@ -155,10 +170,26 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-left: 25px;
+}
+
+.shop-con .pic-2{
+    width: 40%;
+    height: 200px;
+    /* background-color: red; */
+    /* border-radius: 20px; */
+}
+
+.shop-con .pic-2 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 25px;
 }
 
 .shop-con .list{
-    margin-left: 20px;
+    margin-left: 40px;
     width: 55%;
     height: 200px;
     background-color: #fff;
@@ -166,13 +197,35 @@ html {
     position: relative;
 }
 
+/* .shop-con .list-2{
+    margin-left: 40px;
+    width: 55%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+} */
+
 .shop-con .list p{
     padding: 20px 0 0 20px;
 }
 
+.shop-con .list h2{
+    padding: 20px 0 0 20px;
+}
+
+/* .shop-con .list-2 p{
+    padding: 20px 0 0 20px;
+} */
+
 .shop-con .list .p2{
     padding: 5px 0 0 20px;
 }
+
+/* .shop-con .list-2 .p2{
+    padding: 5px 0 0 20px;
+} */
+
 .shop-con .fes{
     padding-left: 20px;
     padding-top: 5px;
@@ -198,6 +251,13 @@ html {
 .selected button:hover{
     background-color: #525e6b;
     cursor: pointer;
+}
+
+.nohave{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -228,8 +288,23 @@ html {
     .input-box input{
         padding: 0 112px 0 50px;
     }
-.input-box .button{
+    .input-box .button{
     right: 12px;
     padding: 8px 18px;
-}
+    }
+    .selected{
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+    }
+    .selected button{
+        background-color: #1F232D;
+        border-radius: 20px;
+        border: none;
+        font-size: 10px;
+        font-weight: 400;
+        color: #fff;
+        padding: 12px 30px;
+        cursor: pointer;
+    }
 }

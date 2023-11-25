@@ -27,21 +27,23 @@
             <div class="main-con">
                 <div class="input-box">
                     <i class="uil uil-search"></i>
-                    <input type="text" placeholder="ค้นหาชื่อร้าน">
+                    <input type="text" placeholder="ค้นหาชื่อร้าน" id="search-item" onkeyup="search()">
                     <button class="button">ค้นหา</button>
                 </div>
-                <div class="shop-con">
+                <div class="shop-con" id="product-list">
+                    <div class="shop-1">
                     <div class="pic">
                         <img src="https://assets.brandinside.asia/uploads/2021/01/otteri-2.jpg" alt="">
                     </div>
                     <div class="list">
-                        <p>Otteri wash & dry ถนนฉัตรไชย</p>
+                        <h2>Otteri Wash&Dry ร้านสะดวกซัก</h2>
                             <span class="fa fa-star checked fes"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+                            <i class="fa fa-star-half-full checked "></i>
                             <span class="fa fa-star"></span>
-                            <span>&nbsp; 4 (60)</span>
+                            
+                            <span>&nbsp; 4.5 (60)</span>
                         <p class="p2">ร้านเครื่องซักผ้าและเครื่องอบผ้า</p>
                         <p class="p2">Otteri Wash&Dry ร้านสะดวกซัก สาขา คอนโดถนอมมิตร ตึก 5</p>
                         <div class="selected">
@@ -49,7 +51,32 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="shop-1">
+                    <div class="pic">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipPdmUJ8Apw4z3ViBbk-hTKi1eaRWrgxA0wqc6DK=s680-w680-h510" alt="">
+                    </div>
+                    <div class="list">
+                        <h2>Groom Laundry ซักอบรีดครบวงจร</h2>
+                            <span class="fa fa-star checked fes"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            
+                            <span>&nbsp; 5 (3)</span>
+                        <p class="p2">บริการซักอบรีดครบวงจรสำหรับเสื้อผ้าทุกชนิด</p>
+                        <p class="p2">99 อาคารเวิร์คเพลส 7 ซอย สายไหม 56 แขวงออเงิน เขตสายไหม กรุงเทพมหานคร 10220</p>
+                        <div class="selected">
+                            <button class="button2">เลือกร้าน</button>
+                        </div>
+                    </div>
+                </div>
+                <label for="" id="when-nohave" class="nohave"></label>
+                </div>
             </div>
         </div>
+
+        <script src="/javascript/search.js"></script>
 </body>
 </html>

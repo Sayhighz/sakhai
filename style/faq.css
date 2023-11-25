@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@600&display=swap');
+
+* {
+    transition: all 0.35s ease;
+    -webkit-transition: all 0.35s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    font-family: 'Anuphan', sans-serif;
+}
+
+html {
+    font-size: calc(35% + 0.8vmin);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f2f5;
+    font-size: 1.6rem;
+    box-shadow: #818181 1px 7px 9px;
+}
+
+.nav-con {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    color: #1F232D;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.login-btn {
+    background-color: #b6b6b6;
+    border-radius: 30px;
+    box-shadow: #7a7a7a 5px 5px 5px;
+    padding: 0.625rem 2.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0.7rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #1F232D;
+    ;
+}
+
+.navbar a:hover {
+    color: #818181;
+}
+
+.main-con h1 {
+    font-size: 3.125rem;
+    color: #1F232D;
+    text-align: center;
+}
+
+.faq h2 {
+    margin: 5 auto;
+    font-size: 2.125rem;
+    color: #1F232D;
+    padding-left: 5rem;
+}
+
+footer {
+    background-color: #49556D;
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+footer ul a:hover{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+
+.on-footer{
+    text-align: left;
+    padding: 70px 0;
+}
+
+.about div{
+    padding: 0.5rem 0;
+}

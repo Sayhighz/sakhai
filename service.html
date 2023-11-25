@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style/service.css">
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <div class="nav-con">
             <div class="logo">
-                <img src="img/sakhai_logo.png" width="50%" alt>
+                <a href="index.html">
+                    <img src="img/sakhai_logo.png" width="50%" alt>
+                </a>
             </div>
             <ul>
                 <li><a href="service.html">บริการของเรา</a></li>
@@ -68,6 +70,17 @@
                 <div>เปิดทำการ 24 ชั่วโมง</div>
             </div>
         </div>
-    </footer>    
+    </footer>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.opacity = "0.7";
+        } else {
+            document.getElementById("navbar").style.opacity = "1";
+        }
+        }
+</script>  
 </body>
 </html>

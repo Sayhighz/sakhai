@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style/faq.css">
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <div class="nav-con">
             <div class="logo">
-                <img src="img/sakhai_logo.png" width="50%" alt>
+                <a href="index.html">
+                    <img src="img/sakhai_logo.png" width="50%" alt>
+                </a>
             </div>
             <ul>
                 <li><a href="service.html">บริการของเรา</a></li>
@@ -26,7 +28,7 @@
             <h1>คำถามที่พบบ่อย</h1>
             <div class="faq">
                 <h2>Q : ถ้าเกิดเสื้อผ้าที่นำไปใช้บริการกับ "ซักให้" ตอนนำส่งคืนลูกค้าเกิดความเสียหาย จะมีการรับผิดชอบกับเหตุการณ์ที่เกิดขึ้นอย่างไร ?</h2>
-                <h2>A : (ช่วยคิดคำตอบหน่อย)</h2>
+                <h2>A : (ช่วยคิดคำตอบหน่อย) กูไม่ช่วย</h2>
                 <hr>
                 <h2>Q : เมื่อใช้บริการ "ซักให้" เราต้องจ่ายเงินเลยหรือไม่ แล้วเงินจ่ายไปจะถึงมือไรเดอร์ ทันทีเลยหรือเปล่า ?</h2>
                 <h2>A : (ช่วยคิดคำตอบหน่อย)</h2>
@@ -62,4 +64,16 @@
                 <div>เปิดทำการ 24 ชั่วโมง</div>
             </div>
         </div>
-    </footer>    
+    </footer>
+    <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.opacity = "0.7";
+            } else {
+                document.getElementById("navbar").style.opacity = "1";
+            }
+            }
+    </script>
+    </body>

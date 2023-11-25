@@ -23,6 +23,8 @@ html {
     background-color: #f0f2f5;
     font-size: 1.6rem;
     box-shadow: #818181 1px 7px 9px;
+    position: sticky;
+    top: 0;
 }
 
 .nav-con {
@@ -36,6 +38,10 @@ html {
 .logo {
     display: flex;
     justify-content: center;
+}
+
+.logo:hover {
+    transform: scale(1.02);
 }
 
 .login-btn {
@@ -181,7 +187,7 @@ html {
     padding: 2rem;
 }
 
-/* .promo {
+.promo {
     display: flex;
     justify-content: center;
 }
@@ -208,7 +214,7 @@ html {
 
 .promotion:hover {
     margin-top: -1px;
-} */
+}
 
 footer {
     background-color: #49556D;

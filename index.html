@@ -7,10 +7,12 @@
         <link rel="stylesheet" href="/style/index.css">
     </head>
     <body>
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <div class="nav-con">
                 <div class="logo">
-                    <img src="img/sakhai_logo.png" width="50%" alt>
+                    <a href="index.html">
+                        <img src="img/sakhai_logo.png" width="50%" alt>
+                    </a>
                 </div>
                 <ul>
                     <li><a href="service.html">บริการของเรา</a></li>
@@ -34,32 +36,6 @@
                 </div>
             </div>
         </div>
-        <!-- <h2 class="h2_step" id="promo">อัตราค่าบริการ</h2>
-        <div class="promo">
-            <div class="promo-con">
-                <div class="promotion">
-                    <img src="/img/promo/48hrs.png" width="20%" alt>
-                    <h3>จัดส่งภายใน 48 ชั่วโมง</h3>
-                    <span class="price">19</span>
-                    <span class="baht">฿</span>
-                    <span class="kg">/กก.</span>
-                </div>
-                <div class="promotion">
-                    <img src="/img/promo/24hrs.png" width="20%" alt>
-                    <h3>จัดส่งภายใน 24 ชั่วโมง</h3>
-                    <span class="price">39</span>
-                    <span class="baht">฿</span>
-                    <span class="kg">/กก.</span>
-                </div>
-                <div class="promotion">
-                    <img src="/img/promo/6hrs.png" width="20%" alt>
-                    <h3>จัดส่งภายใน 6 ชั่วโมง</h3>
-                    <span class="price">59</span>
-                    <span class="baht">฿</span>
-                    <span class="kg">/กก.</span>
-                </div>
-            </div>
-        </div> -->
         <h2 class="h2_step">ขั้นตอนบริการ</h2>
         <div class="process">
             <div class="process-con">
@@ -85,6 +61,32 @@
             <div class="laundry">
                 <h2>เชื่อมต่อร้านซักผ้าทั่วประเทศ</h2>
                 <p>เชื่อมต่อกับขนส่งครบครัน พร้อมบริการ</p>
+            </div>
+        </div>
+        <h2 class="h2_step" id="promo">อัตราค่าบริการ</h2>
+        <div class="promo">
+            <div class="promo-con">
+                <div class="promotion">
+                    <img src="/img/promo/48hrs.png" width="20%" alt>
+                    <h3>จัดส่งภายใน 48 ชั่วโมง</h3>
+                    <span class="price">19</span>
+                    <span class="baht">฿</span>
+                    <span class="kg">/กก.</span>
+                </div>
+                <div class="promotion">
+                    <img src="/img/promo/24hrs.png" width="20%" alt>
+                    <h3>จัดส่งภายใน 24 ชั่วโมง</h3>
+                    <span class="price">39</span>
+                    <span class="baht">฿</span>
+                    <span class="kg">/กก.</span>
+                </div>
+                <div class="promotion">
+                    <img src="/img/promo/6hrs.png" width="20%" alt>
+                    <h3>จัดส่งภายใน 6 ชั่วโมง</h3>
+                    <span class="price">59</span>
+                    <span class="baht">฿</span>
+                    <span class="kg">/กก.</span>
+                </div>
             </div>
         </div>
         <footer>
@@ -120,6 +122,16 @@
             }, 2000);
 
             setTimeout(intervalId, 0)
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.opacity = "0.7";
+            } else {
+                document.getElementById("navbar").style.opacity = "1";
+            }
+            }
     </script>
     </body>
 </html>

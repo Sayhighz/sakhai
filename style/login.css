@@ -15,8 +15,9 @@
 body {
     height: 100vh;
     background: #f6f5f7;
-    background: rgb(174,232,238);
-    background: radial-gradient(circle, rgba(174,232,238,1) 0%, rgba(82,155,241,1) 100%);
+    background-image: url(/img/banner\ bg.jpg);
+    /* background: rgb(174,232,238);
+    background: radial-gradient(circle, rgba(174,232,238,1) 0%, rgba(82,155,241,1) 100%); */
     display: grid;
     place-content: center;
     font-family: 'Anuphan', sans-serif;

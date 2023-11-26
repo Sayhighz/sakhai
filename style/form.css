@@ -216,7 +216,7 @@ label {
 .radiocard1 input {
     position: absolute;
     top: 3.6rem;
-    right: .5rem;
+    right: 1.5rem;
     z-index: 1;
     width: 1rem;
     height: 1.5rem;
@@ -236,7 +236,7 @@ label {
 .radiolast input {
     position: absolute;
     top: 2.6rem;
-    right: .5rem;
+    right: 1.5rem;
     z-index: 1;
     width: 1rem;
     height: 1.5rem;
@@ -473,10 +473,10 @@ input[type="range"]:focus::-webkit-slider-thumb {
 .radiocard-2 input {
     position: absolute;
     top: 3.8rem;
-    right: 0.5rem;
+    right: 2rem;
     z-index: 1;
     width: 5rem;
-    height: 1.5rem;
+    height: 2rem;
     accent-color: #1F232D;
 }
 
@@ -505,7 +505,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
         /* right: calc(100% - 14rem); */
         z-index: 1;
         width: 5rem;
-        height: 1.5rem;
+        height: 2.5rem;
         accent-color: #1F232D;
     }
     

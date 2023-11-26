@@ -12,32 +12,42 @@
     --grad-clr2: #243B55;
 }
 
+html {
+    font-size: calc(35% + 0.8vmin);
+}
+
 body {
     height: 100vh;
     background: #f6f5f7;
     background-image: url(/img/banner\ bg.jpg);
     /* background: rgb(174,232,238);
     background: radial-gradient(circle, rgba(174,232,238,1) 0%, rgba(82,155,241,1) 100%); */
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Anuphan', sans-serif;
 }
 
 .container {
     position: relative;
-    width: 850px;
-    height: 500px;
+    width: 56.25rem;
+    height: 31.25rem;
     background-color: #fff;
     box-shadow: 25px 30px 55px #5577;
     border-radius: 13px;
-    overflow: hidden;
 }
+
+/* @media screen and (max-width: 800px) {
+    .container{
+        width: 600px;
+    }
+} */
 
 .form-container {
     position: absolute;
     width: 60%;
     height: 100%;
-    padding: 0px 40px;
+    padding: 0 2.5rem;
     transition: all 0.6s ease-in-out;
 }
 
@@ -56,7 +66,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 50px;
+    padding: 0 3.125rem;
 }
 
 h1 {
@@ -64,7 +74,7 @@ h1 {
 }
 
 .social-container {
-    margin: 20px 0px;
+    margin: 1.25rem 0;
 }
 
 .social-container a {
@@ -73,24 +83,24 @@ h1 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 5px;
-    height: 40px;
-    width: 40px;
+    margin: 0 0.313rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 span {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .infield {
     position: relative;
-    margin: 8px 0px;
+    margin: 0.5rem 0;
     width: 100%;
 }
 
 input {
     width: 100%;
-    padding: 12px 15px;
+    padding: 0.75rem 0.938rem;
     background-color: #f3f3f3;
     border: none;
     outline: none;
@@ -102,7 +112,7 @@ label {
     top: 100%;
     transform: translateX(-50%);
     width: 0%;
-    height: 2px;
+    height: 0.125rem;
     background: var(--linear-grad);
     transition: 0.3s;
 }
@@ -113,35 +123,35 @@ input:focus ~ label {
 
 a {
     color: #333;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-decoration: none;
-    margin: 15px 0px;
+    margin: 0.938rem 0;
 }
 
 a.forgot {
-    padding-bottom: 3px;
+    padding-bottom: 0.188rem;
     border-bottom: 2px solid #eee;
 }
 
 a.return {
-    padding-top: 20px;
+    padding-top: 1.25rem;
     border-bottom: 2px solid #eee;
 }
 
 button {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: 1px solid var(--grad-clr1);
     background: var(--grad-clr2);
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
+    padding: 0.75rem 2.813rem;
+    letter-spacing: 0.063rem;
     text-transform: uppercase;
 }
 
 .form-container button {
-    margin-top: 17px;
+    margin-top: 1.063rem;
     transition: 80ms ease-in;
 }
 
@@ -165,10 +175,10 @@ button {
     cursor: pointer;
     position: absolute;
     left: 50%;
-    top: 301px;
+    top: 18.813rem;
     transform: translateX(-50%);
-    width: 143.67px;
-    height: 40px;
+    width: 8.979rem;
+    height: 2.5rem;
     border: 1px solid #fff;
     background: transparent;
     border-radius: 20px;
@@ -190,10 +200,10 @@ button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0px 40px;
+    padding: 0 2.5rem;
     text-align: center;
     height: 100%;
-    width: 340px;
+    width: 21.25rem;
     transition: 0.6s ease-in-out;
 }
 
@@ -212,11 +222,11 @@ button {
 }
 
 p {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    margin: 25px 0px 35px;
+    line-height: 1.25rem;
+    letter-spacing: 0.031rem;
+    margin: 1.563rem 0 2.188rem;
 }
 
 .overlay-panel button {

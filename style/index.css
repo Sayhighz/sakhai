@@ -45,10 +45,17 @@ html {
 }
 
 .login-btn {
-    background-color: #b6b6b6;
+    color: #f0f2f5 !important;
+    background-color: #141E30;
     border-radius: 30px;
-    box-shadow: #7a7a7a 5px 5px 5px;
+    box-shadow: #7a7a7a 3px 2px 5px;
     padding: 0.625rem 2.5rem;
+}
+
+.login-btn:hover {
+    color: #141E30 !important;
+    background-color: white;
+    border: solid #141E30;
 }
 
 .navbar ul {
@@ -74,11 +81,9 @@ html {
 }
 
 .login_btn{
-    background-color: #C5C6D0;
     padding: 1rem 4rem;
     border-radius: 30px;
     box-shadow: #868992 5px 5px 5px;
-
 }
 
 .main {
@@ -130,16 +135,17 @@ html {
     margin-right: auto;
     width: 16rem;
     color: #f0f2f5;
-    background-color: #808080;
+    background-color: #141E30;
     border-radius: 10px;
-    border: solid white 3px;
     box-shadow: #4b4b4b 5px 5px 5px;
     padding: 0.5rem 3rem;
     text-decoration: none;
 }
 
 .btn a:hover {
-    color: #a8a9ac;
+    color: #141E30;
+    background-color: white;
+    border: solid #141E30;
 }
 
 .h2_step {
@@ -187,7 +193,7 @@ html {
     padding: 2rem;
 }
 
-.promo {
+/* .promo {
     display: flex;
     justify-content: center;
 }
@@ -214,7 +220,7 @@ html {
 
 .promotion:hover {
     margin-top: -1px;
-}
+} */
 
 footer {
     background-color: #49556D;

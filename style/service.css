@@ -79,6 +79,25 @@ html {
     color: #818181;
 }
 
+@media screen and (max-width: 600px) {
+    .main-con h1 {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        display: none;
+  }
+
+    .navbar{
+        font-size: 1.2rem;
+    }
+
+    .navbar ul{
+        justify-content: center;
+    }
+}
+
 .main {
     width: 100%;
     height: 60rem;

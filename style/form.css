@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.35s ease;
+    -webkit-transition: all 0.35s ease;
 }
 
 body {
@@ -49,10 +51,17 @@ html {
 }
 
 .login-btn {
-    background-color: #b6b6b6;
+    color: #f0f2f5 !important;
+    background-color: #141E30;
     border-radius: 30px;
-    box-shadow: #7a7a7a 5px 5px 5px;
+    box-shadow: #7a7a7a 3px 2px 5px;
     padding: 0.625rem 2.5rem;
+}
+
+.login-btn:hover {
+    color: #141E30 !important;
+    background-color: white;
+    border: solid #141E30;
 }
 
 .navbar ul {
@@ -83,6 +92,25 @@ html {
     border-radius: 30px;
     box-shadow: #868992 5px 5px 5px;
 
+}
+
+@media screen and (max-width: 600px) {
+    .main-con h1 {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        display: none;
+  }
+
+    .navbar{
+        font-size: 1.2rem;
+    }
+
+    .navbar ul{
+        justify-content: center;
+    }
 }
 
 .main {
